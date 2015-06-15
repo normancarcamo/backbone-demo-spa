@@ -1,0 +1,105 @@
+// --------------------------------------------------------------------------------------------------------------------
+nav.navbar
+	.container-fluid
+		.navbar-header
+			.navbar-brand
+				display none
+
+.container, .content
+	h1
+		text-align center
+	.table-responsive
+		display block
+		margin 0 auto
+		position relative
+		table > thead > tr
+			th
+				text-align center
+			.thFirstname							// Titles enabled
+				display table-cell
+			.thLastname, .thGender, .thPhone	// Titles disabled
+				display none
+		table
+			tbody > tr
+				td
+					text-align center
+					cursor pointer
+				.tdFirstname							// Data enabled
+					display table-cell
+				.tdLastname, .tdGender, .tdPhone	// Data disabled
+					display none
+				.tdActions
+					background-color transparent
+					border none
+					width 15rem
+					padding .3rem 0 0 0
+					margin 0
+
+
+// --------------------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 18.75rem)
+	nav.navbar
+		.container-fluid
+			.navbar-header
+				.navbar-brand
+					display block
+
+	.container, .content
+		h1
+			text-align left
+		.table-responsive
+			table > thead > tr
+				.thFirstname, .thLastname			// Titles enabled
+					display table-cell
+				.thGender, .thPhone			// Titles disabled
+					display none
+			table > tbody > tr
+				.tdFirstname, .tdLastname			// Data enabled
+					display table-cell
+				.tdGender, .tdPhone			// Data disabled
+					display none
+
+// --------------------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 21.875rem)
+	.container, .content
+		.table-responsive
+			table > thead > tr
+				.thFirstname, .thLastname 	// Titles enabled
+					display table-cell
+				.thGender, .thPhone					// Title disabled
+					display none
+			table > tbody > tr
+				.tdFirstname, .tdLastname 	// Data enabled
+					display table-cell
+				.tdGender, .tdPhone					// Data disabled
+					display none
+
+// --------------------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 30rem)
+	.container, .content
+		.table-responsive
+			table > thead > tr
+				.thFirstname, .thLastname, .thGender 	// Titles enabled
+					display table-cell
+				.thPhone 									// Titles disabled
+					display none
+			table > tbody > tr
+				.tdFirstname, .tdLastname, .tdGender 	// Data enabled
+					display table-cell
+				.tdPhone										// Data disabled
+					display none
+
+// --------------------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 48rem)
+	.container, .content
+		.table-responsive
+			table > thead > tr
+				.thFirstname, .thLastname, .thGender, .thPhone // Titles enabled
+					display table-cell
+			table > tbody > tr
+				.tdFirstname, .tdLastname, .tdGender, .tdPhone // Data enabled
+					display table-cell
+
+// --------------------------------------------------------------------------------------------------------------------
+@require 'users'
+//@require 'projects'

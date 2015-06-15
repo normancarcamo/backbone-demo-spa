@@ -1,0 +1,26 @@
+// Dependencies:
+@require 'fonts'  //- Should be added before any styles, including the stylus.
+@require 'mixins' 
+@require 'colors'
+
+html,
+body
+	height 100%
+	min-height 100%
+	margin 0
+	
+@require 'header'
+
+.wrapper
+	min-height 100%
+	margin-bottom -3rem
+	padding 0 1rem
+	background-color $bgcolorwrapper
+	&:before
+		content ''
+		display block
+		height 3rem
+	&:after
+		content ''
+		display block
+		height 3rem

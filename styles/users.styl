@@ -1,0 +1,60 @@
+// ------------------------------------------------------------------------------------------------ MOBILE FIRST:
+nav.navbar.navbar-default
+	div.container-fluid
+		div.navbar-header
+			button.menu
+				border-color transparent
+				display block
+				padding 10px 10px
+				margin 1rem auto
+				border none
+				border-color transparent
+				clear both
+				.icon-bar
+					width 3.125rem
+
+
+.content, .container
+	.title
+		//display inline-block
+	.boxOne
+		display flex
+		margin-bottom 1rem
+		justify-content space-between
+		.inputSearch
+			width auto
+		.btnCreateNew
+			width auto
+			margin-right 3rem
+	form.form-horizontal > div.buttons-edit
+		display block
+		width 100%
+		button
+			min-width 8rem
+			width 100%
+		.btn-cancel-employee
+			margin-top .5rem
+		@media screen and (min-width: 18.75rem)
+			float right
+			width auto
+			button
+				min-width 8rem
+				width auto
+			.btn-cancel-employee
+				margin-top 0
+
+	.employeeData > button
+		min-width 8rem
+		float right
+// ------------------------------------------------------------------------------------------------	TABLET & DESKTOP:
+
+@media screen and (min-width: 48rem)
+	nav.navbar.navbar-default
+		div.container-fluid
+			div.navbar-header
+				button.menu
+					display none
+
+	.content, .container > form
+		max-width 60rem
+		margin 0 auto

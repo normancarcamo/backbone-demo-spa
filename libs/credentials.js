@@ -1,0 +1,4 @@
+module.exports = {
+	emailUser: '',
+	emailPass: ''
+};

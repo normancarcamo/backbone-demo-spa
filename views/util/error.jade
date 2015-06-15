@@ -1,0 +1,12 @@
+extends layouts/default
+
+append styles
+	link(rel='stylesheet', href='/styles/error.css')
+
+block header
+block content
+	section(id='content', class='content')
+		h1 #{statusCode}
+		h2 #{message}
+		a(href='/' class='goHome') Back to Homepage
+block scripts

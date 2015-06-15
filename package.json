@@ -1,0 +1,51 @@
+{
+  "name": "simple-blog",
+  "version": "0.0.1",
+  "description": "This is a simple blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Backbone.js",
+    "jQuery",
+    "Ajax",
+    "Jade",
+    "Stylus",
+    "Nib",
+    "Require.JS",
+    "Grunt",
+    "Bower",
+    "AMD",
+    "Node.js",
+    "JavaScript",
+    "Express.js"
+  ],
+  "author": "Norman Carcamo",
+  "license": "Mit",
+  "dependencies": {
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.12.4",
+    "bourne": "^0.4.0",
+    "client-sessions": "^0.7.0",
+    "express": "^4.12.4",
+    "express-handlebars": "^2.0.1",
+    "jade": "^1.9.2",
+    "mysql": "^2.7.0",
+    "nib": "^1.1.0",
+    "q": "^1.4.1",
+    "sequelize": "^3.2.0",
+    "stylus": "^0.51.1",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

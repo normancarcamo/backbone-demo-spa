@@ -1,0 +1,46 @@
+// ---------------------------------------------------------------------------- CONTENT:
+.wrapper .content
+	margin .2rem auto 3rem
+	zoom 96%
+
+	h1
+		setFont(openSans, 4em, 300, $titlecolor, center, initial, normal, normal, 0, ellipsis, true)
+		white-space normal
+	
+	h2
+		setFont(openSans, 1em, 300, $titlecolor, center, initial, normal, normal, normal, ellipsis, true)
+		white-space normal
+		margin-bottom 1.5em
+	
+	.goHome
+		setFont(openSans, 1em, 700, #fff, center, uppercase, normal, normal, normal, ellipsis, true)
+		text-decoration none
+		white-space normal
+		display block
+		width auto
+		background #0FD573
+		border-radius .4em
+		padding 2em 0
+		margin 0 auto
+		&:hover
+			box-shadow 0 0 .5em #459963
+			transition all .2s ease
+		&:active
+			font-size .98em
+			box-shadow 0 0 1em #459963 inset
+			transition all .2s ease
+
+// ---------------------------------------------------------------------------- FOOTER:
+@require 'footer'
+
+// ---------------------------------------------------------------------------- MEDIA QUERIES:
+@media screen and (min-width: 20rem)
+	.wrapper .content
+		h1
+			font-size 8em
+		h2
+			font-size 1.5em
+		
+		.goHome
+			width 14em
+// ---------------------------------------------------------------------------- END.

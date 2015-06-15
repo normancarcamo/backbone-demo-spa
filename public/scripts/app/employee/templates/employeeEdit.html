@@ -1,0 +1,61 @@
+<!-- TEMPLATE -->
+<form action="" class="form-horizontal" role="form">
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_firstname">Firstname:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_firstname' placeholder="Firstname" value='<%= firstname %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_lastname">Lastname:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_lastname' placeholder="Lastname" value='<%= lastname %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_gender">Gender:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_gender' placeholder="Gender" value='<%= gender %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_rtn">RTN:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_rtn' placeholder="RTN" value='<%= rtn %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_location">Location:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_location' placeholder="Location" value='<%= location %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_phone">Phone:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_phone' placeholder="Phone" value='<%= phone %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_photo">Photo:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_photo' placeholder="Photo" value='<%= photo %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_comment">Comment:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_comment' placeholder="Comment" value='<%= comment %>' disabled />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="input_status">Status:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id='input_status' placeholder="Status" value='<%= status %>' disabled />
+		</div>
+	</div>
+	<div class='buttons-edit'>
+		<button type="button" class="btn btn-danger btn-md btn-edit-employee" data-can-edit='false'><span class='glyphicon glyphicon-pencil'></span>&nbsp;Edit</button>
+		<button type="button" class="btn btn-primary btn-md btn-cancel-employee">	<span class='glyphicon glyphicon-ban-circle'></span>&nbsp;Cancel</button>
+	</div>
+</form>

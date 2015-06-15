@@ -1,0 +1,38 @@
+.inputStyle
+	background-color #fff
+	border .1rem solid #E6EDE6
+	border-radius .1rem
+	border-color #d2dae3
+	box-sizing border-box
+	display block
+	height 3.4rem
+	width 100%
+	margin-bottom 0
+	outline transparent none 0
+	padding 0 1rem
+	setFont('ubunturegular', .8em, 600, #656461, left, none, normal, normal, normal, clip, true)
+	&:focus
+	&:active
+		transition all .1s ease-out .1s
+		border-radius 0
+		box-shadow 0 -.1rem 0 #6254B2 inset
+		outline 0
+
+.buttonStyle
+	setFont(openSans, .89em, 700, #8F8CA6, center, none, normal, normal, normal, ellipsis, true)
+	height 3rem
+	width 100%
+	border none
+	border-radius .2rem
+	white-space normal
+	outline transparent none 0
+	transition all .1s ease-out .1s
+
+.progressbar
+	background-color #019f5f
+	fixed top 0 left 0
+	height .2rem
+	width 0
+	z-index 1
+	box-shadow -.01rem -.01rem .5rem 0rem rgba(191, 195, 195, 1)
+	transition all .2s ease-out .2s

@@ -1,0 +1,35 @@
+extends layouts/default
+
+append styles
+	link(rel='stylesheet' type='text/css' href='styles/vendor/bootstrap.min.css')
+	link(rel='stylesheet' type='text/css' href='styles/index.css')
+
+append content
+	nav.navbar.navbar-default
+		div.container-fluid
+			//- Brand and toggle get grouped for better mobile display
+			div.navbar-header
+				button(type="button" class="navbar-toggle collapsed menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(class="navbar-brand" href="#employee") Home
+			//- Collect the nav links, forms, and other content for toggling
+			div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+				ul(class="nav navbar-nav navbar-left")
+					li.dropdown#tabemployee.tabemployee: a(href="#employee" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") Employees <span class="caret"></span>
+						ul(class="dropdown-menu" role="menu" id='ulEmployees')
+							li: a#tabList(href="#employee") List
+							li.divider
+							li: a#tabRegister(href="#employee/register") Create One
+					li#tabuser.tabuser: a(href="#user") Users
+
+				ul(class="nav navbar-nav navbar-right")
+					li.dropdown: a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") Login <span class="caret"></span>
+						ul(class="dropdown-menu" role="menu")
+							li: a(href="#") Sign in
+							li.divider
+							li: a(href="#") Sign up
+							li.divider
+							li: a(href="#") Forgot your password?
+	#container.container

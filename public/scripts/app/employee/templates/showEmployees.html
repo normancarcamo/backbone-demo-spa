@@ -1,0 +1,41 @@
+<!-- TEMPLATE -->
+<h1 class='title'>Employees</h1>
+
+<div class='boxOne'>
+	<input type="text" id='inputSearch' placeholder='Search' class="form-control inputSearch" autofocus> <span class='totalFound'></span>
+	<button type='button' class='btn btn-success btnCreateNew'>Create new</button>
+</div>
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover ">
+		<thead>
+			<tr class="active">
+				<th class='thFirstname'>Firstname</th>
+				<th class='thLastname'>Lastname</th>
+				<th class='thGender'>Gender</th>
+				<th class='thPhone'>Phone</th>
+				<th class='thActions'>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% _.each(models, function(model) { %>
+				<tr data-employee-id="<%= model.get('id')%>">
+					<td class='tdFirstname'><%= model.get('firstname') %></td>
+					<td class='tdLastname'><%= model.get('lastname') %></td>
+					<td class='tdGender'><%= model.get('gender') %></td>
+					<td class='tdPhone'><%= model.get('phone') %></td>
+					<td class='tdActions'>
+						<div class='buttons'>
+							<button type='button' class='btn btn-warning btn-sm btn-edit' id='btn-edit'>
+								<span class='glyphicon glyphicon-pencil btn-edit'></span>Edit
+							</button>
+							<button type='button' class='btn btn-danger btn-sm btn-remove' id='btn-remove'>
+								<span class='glyphicon glyphicon-trash btn-remove'></span>Delete
+							</button>
+						</div>
+					</td>
+				</tr>
+			<% }); %>
+		</tbody>
+	</table>
+</div>

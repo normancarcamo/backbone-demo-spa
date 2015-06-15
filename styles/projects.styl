@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------------------------------------ MOBILE FIRST:
+.content, .container
+	.table-responsive
+		table > tbody > tr
+			td.details
+				span.details-value
+					text-align: center;
+					display: block;
+					width 100%
+
+				div.buttons
+					display block
+					text-align center
+
+// ------------------------------------------------------------------------------------------------	TABLET & DESKTOP:
+@media screen and (min-width: 48rem)
+	.content, .container
+	.table-responsive
+		table > tbody > tr
+			td.details
+				span.details-value
+					display: inline-block;
+					width auto
+					float left
+					text-align left
+				div.buttons
+					float right

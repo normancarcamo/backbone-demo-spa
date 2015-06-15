@@ -1,11 +1,11 @@
 module.exports = {
     development: {
-        username: 'development',
-        password: 'development',
-        database: "development",
+        username: '',
+        password: '',
+        database: "",
         options: {
-            host: '127.0.0.1',
-            port: 3306,
+            host: '',
+            port: 0000,
             maxConcurrentQueries: 100,
             omitNull: true,
             engine: 'InnoDB',
@@ -30,12 +30,12 @@ module.exports = {
             }
         }
     }, test: {
-        username: 'testing',
-        password: 'testing',
-        database: 'testing',
+        username: '',
+        password: '',
+        database: '',
         options: {
-            host: '127.0.0.1',
-            port: 3306,
+            host: '',
+            port: 0000,
             maxConcurrentQueries: 100,
             omitNull: true,
             engine: 'InnoDB',
@@ -60,12 +60,12 @@ module.exports = {
             }
         }
     }, production: {
-        username: 'production',
-        password: 'production',
-        database: 'production',
+        username: '',
+        password: '',
+        database: '',
         options: {
-            host: '127.0.0.1',
-            port: 3306,
+            host: '',
+            port: 0000,
             maxConcurrentQueries: 100,
             omitNull: true,
             engine: 'InnoDB',

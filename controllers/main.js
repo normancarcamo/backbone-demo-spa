@@ -43,7 +43,6 @@ module.exports = function(app) {
 
 	app.get('/employee/:id', function (req, res) {
 
-		// Way #2:  /accounts/signup/verify?token=c10b7...
 		var id = Number(req.params.id);
 
 		models

@@ -1,1 +1,0 @@
-En esta lección usamos por fin a Bootstrap!
